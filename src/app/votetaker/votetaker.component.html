@@ -1,3 +1,7 @@
 <h2>Should mankind colonize the universe?</h2>
 <h3>Agree: {{agreed}}, Disagree: {{disagreed}}</h3>
 <app-voter *ngFor="let voter of voters" [name]="voter" (voted)="onVoted($event)"></app-voter>
+ <!-- [minimum number of integer].[min no of digit]-[max no of decimal]--->
+<h2>{{ 5.678 | number:'1.2-3'}}</h2> <!--5.678-->
+<h2>{{ 5.678 | number:'3.4-5'}}</h2> <!--005.6780-->
+<h2>{{ 5.678 | number:'3.1-2'}}</h2> <!---->
